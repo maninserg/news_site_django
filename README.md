@@ -1,6 +1,6 @@
 # news_site
 
-**About:** The news's website by Django
+**About:** The news website is made by Django
 
 <hr>
 
