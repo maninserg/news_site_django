@@ -127,4 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-./news_site/settings.py
