@@ -1,4 +1,6 @@
 from django import forms
+import re
+from django.core.exceptions import ValidationError
 
 from .models import News
 
@@ -14,3 +16,9 @@ class NewsForm(forms.ModelForm):
             'category': forms.Select(attrs={'class': 'form-control'}),
         }
 
+    def clean_title(self):
+        title = self.cleaned_data['title']
+        if re.match(r'\d', title):
+            raise ValidationError('Название не должно начинаться с цифры')
+        else:
+            return title
