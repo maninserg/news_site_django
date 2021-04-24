@@ -14,7 +14,8 @@ class News(models.Model):
                                        verbose_name='Опубликовано?')
     category = models.ForeignKey('Category', on_delete=models.PROTECT,
                                  null=True, verbose_name='Категория',
-                                 related_name = 'get_news')
+                                 related_name='get_news')
+    views = models.IntegerField(default=0)
 
     def __str__(self):
         return self.title
