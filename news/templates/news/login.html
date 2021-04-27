@@ -9,7 +9,7 @@
 {% block content %} 
 <h1>Login</h1>
 
-<form action="{% url 'add_news' %}" method="post">
+<form method="post">
     {% csrf_token %}
 
     {{ form.as_p }}
