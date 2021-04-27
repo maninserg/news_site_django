@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import *
+from django.views.decorators.cache import cache_page
 
 urlpatterns = [
     path('register/', register, name='register'),
@@ -12,5 +13,6 @@ urlpatterns = [
     path('news/<int:pk>/', ViewNews.as_view(), name='view_news'),
 #    path('news/add_news', add_news, name='add_news'),
     path('news/add_news/', CreateNews.as_view(), name='add_news'),
+#    path('', cache_page(60)(HomeNews.as_view()), name='home'),
     path('', HomeNews.as_view(), name='home'),
 ]
