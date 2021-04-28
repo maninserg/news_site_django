@@ -11,6 +11,7 @@ Have done:
 - using template inheritance
 - using and customization forms
 - using simple tags and include tags
+
 - tune up the connection with MySQL
 
 ## Installation for Linux*
