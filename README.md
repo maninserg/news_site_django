@@ -11,9 +11,12 @@ Have done:
 - using template inheritance
 - using and customization forms
 - using simple tags and include tags
-
-
+- tune up limiting access to users
+- tune up the django admin
 - tune up the connection with MySQL
+- add user's registration and authentication by django authentication system
+- using filesystem caching
+
 
 ## Installation for Linux*
 
