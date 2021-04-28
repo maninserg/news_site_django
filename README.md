@@ -3,7 +3,17 @@
 The news website is made by Django
 
 
-## Installation for Linux*:
+## Description
+
+Have done:
+
+- using functions views and class-based views
+- using template inheritance
+- using and customization forms
+- using simple tags and include tags
+- tune up the connection with MySQL
+
+## Installation for Linux*
 
 1. Clone the repository (or download the zip file and extract it):
 
